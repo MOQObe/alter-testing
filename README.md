@@ -1,4 +1,4 @@
-# Waiting page for komaf
+# Waiting page
 
 ## Setup
 - Install Packages 'npm install'
