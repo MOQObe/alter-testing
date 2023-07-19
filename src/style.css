@@ -1,0 +1,87 @@
+@tailwind base;
+@layer base {}
+@tailwind components;
+@tailwind utilities;
+
+.Nav {
+    @apply flex flex-col items-start;
+}
+.Nav-item {
+    @apply uppercase text-white text-[12vw] leading-[100%];
+}
+.Nav-item .char {
+    /* @apply blur-[13px]; */
+    filter: drop-shadow(16px 16px 20px white) blur(13px);
+    /* filter: drop-shadow(10px 10px 16px white); */
+}
+
+
+
+/* Saol Display */
+@font-face {
+  font-family: "saoldisplay";
+  src: url("/fonts/saoldisplay/saoldisplay-regular-webfont.woff2")
+      format("woff2"),
+    url("/fonts/saoldisplay/saoldisplay-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Sebino  */
+@font-face {
+  font-family: "sebino";
+  src: url("/fonts/sebino/nine_font_-_sebino_light_italic-webfont.woff2")
+      format("woff2"),
+    url("/fonts/sebino/nine_font_-_sebino_light_italic-webfont.woff")
+      format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "sebino";
+  src: url("/fonts/sebino/nine_font_-_sebino_light-webfont.woff2")
+      format("woff2"),
+    url("/fonts/sebino/nine_font_-_sebino_light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sebino";
+  src: url("/fonts/sebino/nine_font_-_sebino_medium_italic-webfont.woff2")
+      format("woff2"),
+    url("/fonts/sebino/nine_font_-_sebino_medium_italic-webfont.woff")
+      format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "sebino";
+  src: url("/fonts/sebino/nine_font_-_sebino_medium-webfont.woff2")
+      format("woff2"),
+    url("/fonts/sebino/nine_font_-_sebino_medium-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
